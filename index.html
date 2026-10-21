@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TMGM Rewards cash back help guide</title>
+<meta name="description" content="130 points = USD 5, paid into your trading account. See what your TMGM Rewards points are worth, where to check them and how to redeem.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@300..900&display=swap">
+<style>
+/* Help guide page in the "Make 130 famous" look: deep navy night, glass cards, one cyan accent. Draft mock-up. */
+:root{
+  --night:#030820;
+  --night-2:#071446;
+  --ink:#F2F6FF;
+  --ink-2:#BAC6EC;
+  --ink-3:#8E9CCB;
+  --line:rgba(130,160,255,.18);
+  --line-2:rgba(140,170,255,.34);
+  --glass-a:rgba(40,72,175,.30);
+  --glass-b:rgba(8,18,62,.62);
+  --cyan:#69E6FF;
+  --blue:#4D7EFF;
+  --amber:#FFC43D;
+  --on-c:#04102E;
+  --font-d:"Outfit","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --font-b:"Manrope","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--ink);font:400 17px/1.6 var(--font-b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,p,ol,ul,figure{margin:0}
+ol,ul{padding:0;list-style:none}
+a{color:inherit}
+b,strong{font-weight:800;color:var(--white,#fff)}
+.ico{width:1.2em;height:1.2em;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1160px,100% - 48px);margin:0 auto}
+.page-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(900px 600px at 85% -5%,rgba(77,126,255,.30),transparent 60%),
+  radial-gradient(700px 500px at -5% 35%,rgba(34,214,196,.10),transparent 60%),
+  radial-gradient(800px 600px at 50% 110%,rgba(56,189,255,.10),transparent 60%),
+  linear-gradient(180deg,var(--night-2) 0%,#040B2C 45%,var(--night) 100%)}
+.page-bg::after{content:"";position:absolute;inset:0;opacity:.45;background:
+  repeating-linear-gradient(115deg,transparent 0 46px,rgba(105,230,255,.03) 46px 47px),
+  radial-gradient(3px 3px at 72% 14%,rgba(140,190,255,.8),transparent),
+  radial-gradient(2px 2px at 88% 26%,rgba(140,190,255,.6),transparent),
+  radial-gradient(2.5px 2.5px at 61% 8%,rgba(105,230,255,.7),transparent),
+  radial-gradient(2px 2px at 14% 62%,rgba(105,230,255,.5),transparent)}
+
+/* Draft strip and header */
+.draft{font-size:12.5px;font-weight:700;letter-spacing:.04em;text-align:center;color:#FFE3A3;background:rgba(255,196,61,.08);border-bottom:1px solid rgba(255,196,61,.25);padding:6px 16px}
+.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(4,10,40,.72);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;white-space:nowrap}
+.brand b{font:800 20px/1 var(--font-d);letter-spacing:-.01em}
+.brand i{width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.brand span{font-size:14px;font-weight:650;color:var(--ink-3);padding-left:12px;border-left:1px solid var(--line-2)}
+.nav{margin-left:auto;display:flex;gap:6px}
+.nav a{font-size:14px;font-weight:650;color:var(--ink-2);text-decoration:none;padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
+.nav a:hover{background:rgba(105,230,255,.10);color:var(--ink)}
+
+/* Hero */
+.hero{padding:72px 0 40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+h1{margin-top:18px;font:800 clamp(40px,5.6vw,72px)/1.02 var(--font-d);letter-spacing:-.025em}
+.g{background:linear-gradient(180deg,#B8F6FF 0%,#69E6FF 40%,#3D8BFF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(80,180,255,.45))}
+.lead{margin-top:22px;font-size:20px;color:#DDE6FF}
+.keyline{display:flex;align-items:center;gap:14px;margin-top:22px;padding:14px 20px;border-radius:16px;border:1px solid rgba(105,230,255,.55);background:rgba(10,24,80,.6);box-shadow:0 0 30px rgba(105,230,255,.18);font-size:19px;line-height:1.4;width:fit-content;max-width:100%}
+.keyline .ico{width:26px;height:26px;color:var(--cyan)}
+.keyline b{font-family:var(--font-d);font-weight:700;color:var(--cyan)}
+.lead2{margin-top:20px;color:var(--ink-2);max-width:34em}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.jump a{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;text-decoration:none;padding:10px 16px;border-radius:999px;border:1px solid var(--line-2);background:rgba(6,14,50,.55);transition:border-color .2s,background .2s}
+.jump a:hover{border-color:var(--cyan);background:rgba(105,230,255,.10)}
+.jump a span{font-family:var(--font-d);font-weight:700;color:var(--cyan)}
+
+.art{position:relative;height:440px}
+.orbit{position:absolute;left:-4%;top:17%;width:108%;height:auto;overflow:visible}
+.orb-a{fill:none;stroke:url(#orbG);stroke-width:2}
+.orb-b{fill:none;stroke:var(--cyan);stroke-width:3;stroke-linecap:round;stroke-dasharray:70 1500;filter:drop-shadow(0 0 6px var(--cyan));animation:orbit 8s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:-1570}}
+.card3d{position:absolute;left:50%;top:50%;width:300px;padding:28px 30px 30px;border-radius:26px;transform:translate(-50%,-50%) perspective(900px) rotateY(-14deg) rotateX(6deg) rotateZ(-2deg);background:linear-gradient(150deg,rgba(120,170,255,.32),rgba(20,46,140,.42) 45%,rgba(8,20,70,.75));border:1px solid rgba(160,200,255,.55);box-shadow:0 0 48px rgba(77,126,255,.5),inset 0 0 40px rgba(105,230,255,.16),0 40px 80px rgba(0,0,0,.45);display:grid;gap:4px}
+.c-k{font-size:12.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#CFE2FF}
+.c-pts{display:flex;align-items:baseline;gap:10px;margin-top:10px}
+.c-pts b{font:800 112px/.9 var(--font-d);letter-spacing:-.03em;background:linear-gradient(180deg,#FFFFFF 0%,#B8F6FF 40%,#69E6FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(105,230,255,.55))}
+.c-pts small{font:600 20px var(--font-d);color:#DDE8FF}
+.c-usd{display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:16px;border-top:1px solid rgba(160,200,255,.35)}
+.c-usd span{font:700 34px/1 var(--font-d);color:var(--cyan)}
+.c-usd b{font:800 40px/1 var(--font-d);color:#FFFFFF}
+.c-sub{margin-top:6px;font-size:14px;font-weight:600;color:#CFE2FF}
+.fl{position:absolute;display:grid;place-items:center;width:58px;height:58px;border-radius:16px;color:#CFE2FF;background:linear-gradient(150deg,rgba(120,170,255,.28),rgba(10,24,80,.7));border:1px solid rgba(160,200,255,.45);box-shadow:0 0 24px rgba(77,126,255,.4);animation:bob 6s ease-in-out infinite}
+.fl .ico{width:26px;height:26px}
+.f1{left:4%;top:16%}
+.f2{right:4%;top:8%;animation-delay:-2s}
+.f3{right:0;bottom:16%;animation-delay:-4s;width:50px;height:50px}
+.f4{left:8%;bottom:10%;width:50px;height:50px;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+
+/* Sections */
+.sec{padding:72px 0;scroll-margin-top:72px}
+.sec-head{display:grid;gap:12px;margin-bottom:32px;max-width:46em}
+.num{font:700 15px var(--font-d);letter-spacing:.2em;color:var(--cyan)}
+h2{font:800 clamp(30px,3.6vw,44px)/1.08 var(--font-d);letter-spacing:-.015em}
+.sec-head p{font-size:18px;color:var(--ink-2)}
+.glass{background:linear-gradient(180deg,var(--glass-a),var(--glass-b));border:1px solid var(--line-2);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 20px 50px rgba(0,0,0,.28)}
+.note{margin-top:22px;font-size:15px;color:var(--ink-3)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line-2),transparent)}
+
+/* Prices */
+.prices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:p}
+.price{position:relative;padding:22px 22px 20px;display:grid;gap:2px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.price:hover{transform:translateY(-3px);border-color:rgba(105,230,255,.6)}
+.price .pts{font:800 38px/1 var(--font-d);letter-spacing:-.02em;color:#fff;font-variant-numeric:tabular-nums}
+.price .unit{font-size:14px;font-weight:650;color:var(--ink-3)}
+.price .usd{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font:800 22px/1.1 var(--font-d);color:var(--cyan)}
+.price.first{border-color:rgba(105,230,255,.75);box-shadow:0 0 34px rgba(105,230,255,.25),inset 0 0 30px rgba(105,230,255,.10)}
+.price.first .pts{background:linear-gradient(180deg,#FFFFFF,#69E6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Where to check */
+.split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.body{font-size:19px;line-height:1.65;color:#DDE6FF}
+.legend{display:grid;gap:12px;margin-top:28px}
+.legend li{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:650;color:var(--ink-2)}
+.mk{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;flex:none;font:800 14px var(--font-d);color:var(--on-c);background:var(--cyan);box-shadow:0 0 14px rgba(105,230,255,.6)}
+.portal{position:relative;padding:0;overflow:visible}
+.pt{border-radius:18px;overflow:hidden;border:1px solid var(--line-2);background:rgba(4,10,40,.85)}
+.pt-bar{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.pt-logo{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#4D7EFF,#22D6C4);opacity:.85}
+.pt-title{font-size:14px;font-weight:800;color:var(--ink-2)}
+.pt-pts{position:relative;margin-left:auto;display:flex;align-items:baseline;gap:8px;padding:6px 12px;border-radius:10px;background:rgba(105,230,255,.12);box-shadow:0 0 0 2px var(--cyan),0 0 22px rgba(105,230,255,.45)}
+.pt-pts small{font-size:12.5px;color:var(--ink-2)}
+.pt-pts b{font:800 18px var(--font-d);color:#fff}
+.pt-pts::after{content:"";position:absolute;inset:-8px;border-radius:14px;border:2px solid var(--cyan);opacity:0;animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{opacity:.8;transform:scale(.96)}100%{opacity:0;transform:scale(1.12)}}
+.pt-name{width:92px;height:14px;border-radius:999px;background:repeating-linear-gradient(90deg,rgba(150,170,230,.5) 0 7px,rgba(150,170,230,.2) 7px 14px);filter:blur(2px)}
+.pt-body{display:grid;grid-template-columns:170px minmax(0,1fr);min-height:250px}
+.pt-side{display:grid;align-content:start;gap:10px;padding:18px 14px;border-right:1px solid var(--line)}
+.pt-side i{display:block;height:12px;border-radius:999px;background:rgba(130,160,255,.16)}
+.pt-side i:nth-child(1){width:70%}
+.pt-side i:nth-child(3){width:60%}
+.pt-side i:nth-child(4){width:76%}
+.pt-side span{position:relative;display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;color:#fff;padding:9px 10px;border-radius:10px;background:rgba(105,230,255,.14);box-shadow:inset 0 0 0 1px rgba(105,230,255,.55)}
+.pt-main{padding:18px 20px;display:grid;align-content:start;gap:14px}
+.pt-tab{display:inline-flex;width:fit-content;font-size:13px;font-weight:800;color:var(--on-c);background:var(--cyan);border-radius:999px;padding:5px 12px}
+.pt-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pt-tiles span{display:grid;gap:2px;padding:12px;border-radius:12px;border:1px solid var(--line-2);background:rgba(10,24,80,.55)}
+.pt-tiles b{font:800 17px var(--font-d)}
+.pt-tiles small{font-size:12px;color:var(--ink-3)}
+.pt-lines{display:grid;gap:8px}
+.pt-lines i{display:block;height:10px;border-radius:999px;background:rgba(130,160,255,.12)}
+.pt-lines i:nth-child(2){width:72%}
+.portal .mk{position:absolute}
+.mk-1{right:-12px;top:-12px}
+.mk-2{left:-12px;top:96px}
+.cap{margin-top:12px;font-size:13px;color:var(--ink-3);text-align:right}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:22px 22px 24px;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto 1fr;column-gap:14px;row-gap:16px;align-items:start}
+.step-n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid var(--cyan);color:var(--cyan);font:800 19px var(--font-d);box-shadow:0 0 16px rgba(105,230,255,.35)}
+.step .ico{width:28px;height:28px;color:var(--ink-3);justify-self:end;align-self:center}
+.step p{grid-column:1/-1;font-size:17.5px;line-height:1.5;color:#E3EAFF}
+.step.last .step-n{background:var(--cyan);color:var(--on-c)}
+.step:not(:nth-child(3n))::after{content:"";position:absolute;right:-14px;top:43px;width:10px;height:10px;border-top:2px solid var(--cyan);border-right:2px solid var(--cyan);transform:rotate(45deg);filter:drop-shadow(0 0 4px var(--cyan))}
+.done{display:flex;align-items:center;gap:16px;margin-top:22px;padding:18px 22px;border-radius:18px;border:1px solid rgba(70,227,160,.45);background:rgba(70,227,160,.08);font-size:18px;line-height:1.5;color:#DFF8EC}
+.done .ico{width:30px;height:30px;color:#46E3A0}
+
+/* Questions */
+.narrow{width:min(860px,100% - 48px)}
+.faq{display:grid;gap:12px}
+.faq details{border-radius:16px;border:1px solid var(--line-2);background:linear-gradient(180deg,rgba(40,72,175,.22),rgba(8,18,62,.55));transition:border-color .2s}
+.faq details[open]{border-color:rgba(105,230,255,.55)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;font:700 19px/1.35 var(--font-d)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ico{width:22px;height:22px;color:var(--cyan);transition:transform .25s}
+.faq details[open] summary .ico{transform:rotate(180deg)}
+.faq p{padding:0 22px 20px;font-size:17px;color:var(--ink-2)}
+
+/* Closing band and footer */
+.close{padding:56px 0 72px}
+.close-card{display:flex;align-items:center;justify-content:center;gap:18px;text-align:center;padding:30px 28px;border-radius:24px;border:1px solid rgba(105,230,255,.5);background:radial-gradient(120% 140% at 50% 0%,rgba(77,126,255,.35),rgba(8,18,62,.6));box-shadow:0 0 40px rgba(105,230,255,.15)}
+.close-card .ico{width:34px;height:34px;color:var(--cyan)}
+.close-card p{font:600 clamp(20px,2.6vw,30px)/1.3 var(--font-d)}
+.close-card b{color:var(--cyan)}
+.foot{border-top:1px solid var(--line);padding:26px 0 40px;font-size:14px;color:var(--ink-3)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.foot b{color:var(--ink-2);font-weight:700}
+
+/* Entrance */
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}.d4{animation-delay:.32s}.d5{animation-delay:.4s}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+
+/* Tablet and phone */
+@media (max-width: 960px){
+  .nav{display:none}
+  .hero{padding:44px 0 16px}
+  .hero-grid,.split{grid-template-columns:minmax(0,1fr)}
+  .art{height:380px;max-width:520px;width:100%;margin:0 auto}
+  .prices{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .step::after{display:none}
+}
+@media (max-width: 600px){
+  body{font-size:16px}
+  .wrap,.narrow{width:calc(100% - 32px)}
+  .top .wrap{height:56px}
+  .brand b{font-size:18px}
+  .brand span{font-size:13px}
+  .lead{font-size:18px}
+  .keyline{font-size:16.5px;padding:12px 16px;gap:12px}
+  .keyline .ico{width:22px;height:22px}
+  .art{height:330px}
+  .card3d{width:250px;padding:22px 24px 24px}
+  .c-pts b{font-size:90px}
+  .c-usd b{font-size:32px}
+  .c-usd span{font-size:28px}
+  .fl{width:46px;height:46px;border-radius:13px}
+  .fl .ico{width:21px;height:21px}
+  .f3,.f4{width:42px;height:42px}
+  .sec{padding:52px 0}
+  .sec-head{margin-bottom:24px}
+  .sec-head p,.body{font-size:17px}
+  .prices{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .price{padding:18px 16px 16px}
+  .price .pts{font-size:31px}
+  .price .usd{font-size:19px}
+  .pt-body{grid-template-columns:116px minmax(0,1fr);min-height:0}
+  .pt-bar{gap:10px;padding:12px 14px}
+  .pt-title{display:none}
+  .pt-name{width:58px}
+  .pt-side{padding:14px 10px}
+  .pt-side span{font-size:12px;padding:8px}
+  .pt-main{padding:14px}
+  .pt-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pt-tiles span:nth-child(3){display:none}
+  .steps{grid-template-columns:minmax(0,1fr);gap:12px}
+  .step{grid-template-columns:auto 1fr auto;grid-template-rows:auto;align-items:center;row-gap:0;padding:16px 18px}
+  .step-n{width:38px;height:38px;font-size:17px}
+  .step p{grid-column:2;grid-row:1;font-size:16.5px}
+  .step .ico{grid-column:3;grid-row:1;width:24px;height:24px}
+  .done{font-size:16.5px;padding:16px 18px;align-items:flex-start}
+  .faq summary{font-size:17.5px;padding:16px 18px}
+  .faq p{padding:0 18px 18px;font-size:16px}
+  .close-card{flex-direction:column;gap:10px;padding:26px 20px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .orb-b,.fl,.pt-pts::after,.rise{animation:none}
+  .price,.faq summary .ico{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="page-bg" aria-hidden="true"></div>
+<p class="draft">Draft mock-up for internal review. Not a live page.</p>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="TMGM Rewards help guide, back to top"><i></i><b>TMGM Rewards</b><span>Help guide</span></a>
+    <nav class="nav" aria-label="On this page">
+      <a href="#worth">What your points are worth</a>
+      <a href="#check">Where to check</a>
+      <a href="#redeem">How to redeem</a>
+      <a href="#questions">Questions</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow rise">Help guide</p>
+        <h1 class="rise d1">Turn your points into <span class="g">cash back</span></h1>
+        <p class="lead rise d2">TMGM Rewards lets you redeem your points for cash back.</p>
+        <p class="keyline rise d3"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="13.5" r="1.2"/></svg><span><b>130 points = USD 5,</b> paid into your trading account.</span></p>
+        <p class="lead2 rise d4">This guide shows what your points are worth, where to check them and how to redeem in six simple steps.</p>
+        <nav class="jump rise d5" aria-label="Jump to a section">
+          <a href="#worth"><span>01</span>What your points are worth</a>
+          <a href="#check"><span>02</span>Where to check</a>
+          <a href="#redeem"><span>03</span>How to redeem</a>
+          <a href="#questions"><span>04</span>Questions</a>
+        </nav>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg class="orbit" viewBox="0 0 560 300"><defs><linearGradient id="orbG" x1="0" x2="1"><stop offset="0" stop-color="#4D7EFF" stop-opacity="0"/><stop offset=".5" stop-color="#69E6FF" stop-opacity=".9"/><stop offset="1" stop-color="#4D7EFF" stop-opacity="0"/></linearGradient></defs><ellipse class="orb-a" cx="280" cy="150" rx="262" ry="92"/><ellipse class="orb-b" cx="280" cy="150" rx="262" ry="92"/></svg>
+        <div class="card3d">
+          <span class="c-k">TMGM Rewards</span>
+          <span class="c-pts"><b>130</b><small>points</small></span>
+          <span class="c-usd"><span>=</span><b>USD 5</b></span>
+          <span class="c-sub">paid into your trading account</span>
+        </div>
+        <span class="fl f1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="13.5" r="1.2"/></svg></span>
+        <span class="fl f2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
+        <span class="fl f3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></span>
+        <span class="fl f4"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap divider"></div>
+
+  <section class="sec" id="worth">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="num">01</span>
+        <h2>What your points are worth</h2>
+        <p>There are 12 cash back amounts, from USD 5 to USD 5,000.</p>
+      </header>
+      <ul class="prices" aria-label="Cash back prices">
+        <li class="price glass first"><span class="pts">130</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 5</span></li>
+        <li class="price glass"><span class="pts">240</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 10</span></li>
+        <li class="price glass"><span class="pts">450</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 20</span></li>
+        <li class="price glass"><span class="pts">600</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 30</span></li>
+        <li class="price glass"><span class="pts">1,000</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 50</span></li>
+        <li class="price glass"><span class="pts">1,850</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 100</span></li>
+        <li class="price glass"><span class="pts">2,450</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 150</span></li>
+        <li class="price glass"><span class="pts">4,300</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 250</span></li>
+        <li class="price glass"><span class="pts">6,300</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 500</span></li>
+        <li class="price glass"><span class="pts">11,500</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 1,000</span></li>
+        <li class="price glass"><span class="pts">25,500</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 2,500</span></li>
+        <li class="price glass"><span class="pts">49,000</span><span class="unit">points</span><span class="usd"><span class="sr">= </span>USD 5,000</span></li>
+      </ul>
+      <p class="note">Prices as shown in TMGM Rewards &gt; Cash Back. Please check the store for the latest prices.</p>
+    </div>
+  </section>
+
+  <div class="wrap divider"></div>
+
+  <section class="sec" id="check">
+    <div class="wrap split">
+      <div>
+        <header class="sec-head">
+          <span class="num">02</span>
+          <h2>Where to check your points</h2>
+        </header>
+        <p class="body">Your points balance is at the top of the client portal. To see the cash back amounts, open <b>TMGM Rewards</b> in the sidebar and go to <b>Cash Back</b>.</p>
+        <ol class="legend">
+          <li><span class="mk">1</span>Your points balance</li>
+          <li><span class="mk">2</span>TMGM Rewards, then Cash Back</li>
+        </ol>
+      </div>
+      <figure class="portal" role="img" aria-label="Illustration of the client portal: the points balance at the top, TMGM Rewards in the sidebar, and the Cash Back amounts">
+        <div class="pt">
+          <div class="pt-bar"><span class="pt-logo"></span><span class="pt-title">Client portal</span><span class="pt-pts"><small>Points</small><b>1,284</b></span><span class="pt-name"></span></div>
+          <div class="pt-body">
+            <div class="pt-side"><i></i><span>TMGM Rewards</span><i></i><i></i></div>
+            <div class="pt-main">
+              <span class="pt-tab">Cash Back</span>
+              <div class="pt-tiles"><span><b>USD 5</b><small>130 points</small></span><span><b>USD 10</b><small>240 points</small></span><span><b>USD 20</b><small>450 points</small></span></div>
+              <div class="pt-lines"><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <span class="mk mk-1">1</span>
+        <span class="mk mk-2">2</span>
+        <figcaption class="cap">Illustration</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap divider"></div>
+
+  <section class="sec" id="redeem">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="num">03</span>
+        <h2>How to redeem</h2>
+      </header>
+      <ol class="steps">
+        <li class="step glass"><span class="step-n">1</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Log in to the client portal and open <b>TMGM Rewards</b> in the sidebar.</p></li>
+        <li class="step glass"><span class="step-n">2</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg><p>Go to <b>Cash Back</b>.</p></li>
+        <li class="step glass"><span class="step-n">3</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h.01M3 12h.01M3 18h.01"/><path d="M8 6h13M8 12h13M8 18h13"/></svg><p>Pick the amount you want.</p></li>
+        <li class="step glass"><span class="step-n">4</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></svg><p>Press <b>Redeem Now</b>.</p></li>
+        <li class="step glass"><span class="step-n">5</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="13.5" r="1.2"/></svg><p>Choose the trading account you want it paid into.</p></li>
+        <li class="step glass last"><span class="step-n">6</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><p>Confirm.</p></li>
+      </ol>
+      <p class="done"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Your cash back is processed within 1 to 2 working days and paid into the trading account you chose.</span></p>
+    </div>
+  </section>
+
+  <div class="wrap divider"></div>
+
+  <section class="sec" id="questions">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <span class="num">04</span>
+        <h2>Questions</h2>
+      </header>
+      <div class="faq">
+        <details open><summary>What is 130 points worth?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>USD 5 cash back, paid into your trading account.</p></details>
+        <details open><summary>What are the smallest and biggest cash back amounts?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>The smallest is USD 5 for 130 points. The biggest is USD 5,000 for 49,000 points.</p></details>
+        <details open><summary>Where can I see my points?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Your points balance is at the top of the client portal.</p></details>
+        <details open><summary>Where does my cash back go?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Into the trading account you choose when you redeem.</p></details>
+        <details open><summary>How long does it take?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Your cash back is processed within 1 to 2 working days.</p></details>
+        <details open><summary>Why do some items show 999,999 points?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><p>Those are promotion prizes. They need a coupon from a TMGM promotion, so they work differently from the 12 cash back amounts in this guide.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="wrap">
+      <div class="close-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="13.5" r="1.2"/></svg><p><b>130 points = USD 5,</b> paid into your trading account.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap"><span><b>TMGM Rewards</b> · Help guide</span><span>Draft mock-up for internal review. Not a live page.</span></div>
+</footer>
+</body>
+</html>
